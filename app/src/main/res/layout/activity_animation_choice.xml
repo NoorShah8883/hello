@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+
+    tools:context=".Avtivities.animationChoice">
+    <RelativeLayout
+        android:id="@+id/adbanner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+
+        android:background="@drawable/adsbag">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:adSize="BANNER"
+            app:adUnitId="@string/BannerIdAdmob">
+
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="5"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:padding="14dp"
+                android:rowCount="2">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/crd_blood_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:onClick="gotoDefaultActivity"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/defaultloti15"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_row="4"
+                            android:layout_column="2"
+                            android:layout_marginLeft="3dp"
+                            app:lottie_rawRes="@raw/df6"></com.airbnb.lottie.LottieAnimationView>
+
+                        <!--                <ImageView-->
+                        <!--                    android:id="@+id/image1"-->
+                        <!--                    android:layout_width="80dp"-->
+                        <!--                    android:layout_height="80dp"-->
+                        <!--                    android:layout_gravity="center_horizontal"-->
+                        <!--                    />-->
+
+                        <TextView
+                            android:id="@+id/t1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/image1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:padding="5dp"
+                            android:text="Default Animation"
+                            android:textColor="@color/crdbk"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/crd_blood_volume"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:onClick="gotoBubbleAnimation"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/bubbl15"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_row="4"
+                            android:layout_column="2"
+                            android:layout_marginLeft="3dp"
+                            app:lottie_rawRes="@raw/bbl4"
+                            app:lottie_repeatCount="100">
+
+                        </com.airbnb.lottie.LottieAnimationView>
+
+                        <!--                <ImageView-->
+                        <!--                    android:id="@+id/image2"-->
+                        <!--                    android:layout_width="80dp"-->
+                        <!--                    android:layout_height="80dp"-->
+                        <!--                    android:layout_gravity="center_horizontal"-->
+
+                        <!--                    />-->
+
+                        <TextView
+                            android:id="@+id/t2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/image2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:padding="5dp"
+                            android:text="Bubble Animations"
+                            android:textColor="@color/crdbk"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/crd_blood_alcohol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:onClick="SelectFromGerlley"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center_horizontal|center_vertical"
+
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image3"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:src="@drawable/gi"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/t3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/image3"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Select photo"
+                            android:textColor="@color/crdbk"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/crd_blood_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:onClick="gotoWallpaperBackground"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center_horizontal|center_vertical"
+
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image4"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:src="@drawable/bgw" />
+
+                        <TextView
+                            android:id="@+id/t4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/image1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:padding="5dp"
+                            android:text="Select Background"
+                            android:textColor="@color/crdbk"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </GridLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/adsbag"
+                android:padding="5dp"
+
+                >
+
+                <FrameLayout
+                    android:id="@+id/fl_adplaceholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout></ScrollView>
+</LinearLayout>

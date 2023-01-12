@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Batterry Charging</string>
+
+    <string-array name="country_array">
+        <item>Default animation</item>
+        <item>Bubble animation</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    ///test ads
+<!--        <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+<!--        <string name="BannerIdAdmob">ca-app-pub-3940256099942544/6300978111</string>-->
+<!--        <string name="InterstitalAdID">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--        <string name="native_ad">ca-app-pub-3940256099942544/2247696110</string>-->
+
+    // ads
+    <string name="app_id">ca-app-pub-5417208750067180~8103868414</string>
+    <string name="BannerIdAdmob">ca-app-pub-5417208750067180/9690065212</string>
+    <string name="InterstitalAdID">ca-app-pub-5417208750067180/8129571533</string>
+    <string name="native_ad">ca-app-pub-5417208750067180/2877244858</string>
+</resources>

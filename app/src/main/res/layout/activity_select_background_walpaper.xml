@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    tools:context=".Avtivities.selectBackgroundWalpaper">
+    <RelativeLayout
+        android:id="@+id/adbanner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+
+        android:background="@drawable/adsbag">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:adSize="BANNER"
+            app:adUnitId="@string/BannerIdAdmob">
+
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:rowCount="13"
+                android:columnCount="3"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/wallloti1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+
+                    android:onClick="settowalpaper"
+                    android:src="@drawable/wallpaper19"
+
+                    ></ImageView>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/wall2"
+                        android:layout_row="0"
+                        android:layout_column="1"
+
+                        android:onClick="settomobile"
+                       android:src="@drawable/wallpaper18"
+                        >
+                    </ImageView>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/wall3"
+                        android:layout_row="0"
+                        android:layout_column="2"
+                        android:onClick="settwo"
+                        android:src="@drawable/wallpaper17"
+                        >
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/wall4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:onClick="setbackground4"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/wallpaper16">
+
+                    </ImageView>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/wall5"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:onClick="setbackground5"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/wallpaper15"
+                        >
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/wall6"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:onClick="setbackground6"
+
+                        android:src="@drawable/wallpaper1"
+                        >
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/wall7"
+                        android:onClick="setbackground7"
+                        android:src="@drawable/wallpaper2"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        >
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/wall8"
+                        android:layout_row="3"
+                        android:layout_column="1"
+                        android:onClick="setbackground8"
+                        android:src="@drawable/wallpaper3"
+                        >
+                    </ImageView>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/wall9"
+                        android:layout_row="3"
+                        android:layout_column="2"
+                        android:onClick="setbackground9"
+                        android:src="@drawable/wallpaper4"
+                        >
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/wall10"
+                        android:layout_row="4"
+                        android:layout_column="0"
+                        android:onClick="setbackground10"
+                        android:src="@drawable/wallpaper5"
+                        >
+                    </ImageView>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                        android:id="@+id/wall11"
+                        android:layout_row="4"
+                        android:layout_column="1"
+                        android:onClick="setbackground11"
+
+                        android:src="@drawable/wallpaper6"
+                        >
+                    </ImageView>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                        android:id="@+id/wall12"
+                        android:layout_row="4"
+                        android:layout_column="2"
+                        android:onClick="setbackground12"
+                        android:src="@drawable/wallpaper7"
+                        >
+                    </ImageView>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                        android:id="@+id/wall13"
+                        android:layout_row="6"
+                        android:layout_column="0"
+                        android:onClick="setbackground13"
+
+                        android:src="@drawable/wallpaper8"
+                        >
+                    </ImageView>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                        android:id="@+id/wall14"
+                        android:layout_row="6"
+                        android:layout_column="1"
+                        android:onClick="setbackground14"
+                        android:src="@drawable/wallpaper9"
+                        >
+                    </ImageView>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                        android:id="@+id/wall15"
+                        android:layout_row="6"
+                        android:layout_column="2"
+                        android:onClick="setbackground15"
+                        android:src="@drawable/wallpaper10"
+                        >
+                    </ImageView>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                        android:id="@+id/wall16"
+                        android:layout_row="7"
+                        android:layout_column="0"
+                        android:onClick="setbackground16"
+                        android:src="@drawable/wallpaper11"
+                        >
+                    </ImageView>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                        android:id="@+id/wall17"
+                        android:layout_row="7"
+                        android:layout_column="1"
+                        android:onClick="setbackground17"
+                        android:src="@drawable/wallpaper12"
+                        >
+                    </ImageView>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                        android:id="@+id/wall18"
+                        android:layout_row="7"
+                        android:layout_column="2"
+                        android:onClick="setbackground18"
+                        android:src="@drawable/wallpaper13"
+                        >
+                    </ImageView>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                        android:id="@+id/wall19"
+                        android:layout_row="8"
+                        android:layout_column="0"
+                        android:onClick="setbackground19"
+                        android:src="@drawable/wallpaper14"
+                        >
+                    </ImageView>
+                <ImageView
+                    android:id="@+id/wall20"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_row="8"
+                    android:layout_column="1"
+                    android:layout_margin="5dp"
+                    android:onClick="setbackground20"
+                    android:src="@drawable/wallpaper15"
+                        >
+                    </ImageView><ImageView
+                    android:id="@+id/wall21"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_row="8"
+                    android:layout_column="2"
+                    android:layout_margin="5dp"
+                    android:onClick="setbackground21"
+                    android:src="@drawable/wallpaper27"
+                        >
+                    </ImageView>
+
+
+            </GridLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/adsbag"
+                android:padding="5dp"
+
+                >
+
+                <FrameLayout
+                    android:id="@+id/fl_adplaceholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

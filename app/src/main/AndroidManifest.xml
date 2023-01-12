@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Roshiappstudio.batterrycharging"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/icon1"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/icon1"
+        android:supportsRtl="true"
+        android:exported="true"
+        android:theme="@style/Theme.BatterryCharging">
+        <activity android:name="com.Roshiappstudio.batterrycharging.Avtivities.imageview"></activity>
+        <activity android:name="com.Roshiappstudio.batterrycharging.Avtivities.playAnimation"></activity>
+        <activity android:name="com.Roshiappstudio.batterrycharging.Avtivities.selectBackgroundWalpaper"
+            android:exported="true"
+            android:parentActivityName="com.Roshiappstudio.batterrycharging.Avtivities.animationChoice"/>
+        <activity android:name="com.Roshiappstudio.batterrycharging.Avtivities.animationBubble"
+            android:exported="true"
+            android:parentActivityName="com.Roshiappstudio.batterrycharging.Avtivities.animationChoice"/>
+        <activity android:name="com.Roshiappstudio.batterrycharging.Avtivities.animationDefault"
+            android:exported="true"
+            android:parentActivityName="com.Roshiappstudio.batterrycharging.Avtivities.animationChoice"/>
+        <activity android:name="com.Roshiappstudio.batterrycharging.Avtivities.animationChoice"
+            android:exported="true"
+            android:parentActivityName="com.Roshiappstudio.batterrycharging.Avtivities.MainActivity"/>
+
+        <activity android:name="com.Roshiappstudio.batterrycharging.Splashscreen"
+            android:exported="true"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.Roshiappstudio.batterrycharging.Avtivities.MainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+
+
+        <service android:name="com.Roshiappstudio.batterrycharging.Avtivities.FloatingViewService"
+            android:enabled="true"
+            android:exported="true">
+
+        </service>
+
+<!--        <receiver-->
+<!--            android:name=".ExampleAppWidgetProvider"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />-->
+
+<!--            </intent-filter>-->
+
+<!--            <meta-data-->
+<!--                android:name="android.appwidget.provider"-->
+<!--                android:resource="@xml/example_appwidget_info" />-->
+<!--        </receiver>-->
+        <receiver android:name="com.Roshiappstudio.batterrycharging.Avtivities.ExemplBrodcast"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id"/>
+    </application>
+
+</manifest>
